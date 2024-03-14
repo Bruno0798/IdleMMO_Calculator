@@ -1,0 +1,240 @@
+{
+    "efficiencies": {
+        "Woodcutting": 1,
+        "Mining": 1,
+        "Fishing": 1,
+        "Smelting": 1
+    },
+    "woodcutting_logs": {
+        "Oak": {
+            "level": 1,
+            "base_time": 12,
+            "value": 1
+        },
+        "Yew": {
+            "level": 5,
+            "base_time": 15,
+            "value": 2
+        },
+        "Spruce": {
+            "level": 10,
+            "base_time": 23,
+            "value": 3
+        },
+        "Birch": {
+            "level": 15,
+            "base_time": 27,
+            "value": 5
+        },
+        "Banyan": {
+            "level": 40,
+            "base_time": 31,
+            "value": 7
+        },
+        "Maple": {
+            "level": 60,
+            "base_time": 36,
+            "value": 9
+        },
+        "Willow": {
+            "level": 70,
+            "base_time": 40,
+            "value": 11
+        },
+        "Mahogany": {
+            "level": 80,
+            "base_time": 44,
+            "value": 13
+        },
+        "Mystical": {
+            "level": 90,
+            "base_time": 55,
+            "value": 17
+        }
+    },
+    "mining_ores": {
+        "Coal": {
+            "level": 1,
+            "base_time": 12,
+            "value": 1
+        },
+        "Tin": {
+            "level": 1,
+            "base_time": 12,
+            "value": 1
+        },
+        "Copper": {
+            "level": 5,
+            "base_time": 15,
+            "value": 1
+        },
+        "Iron": {
+            "level": 10,
+            "base_time": 23,
+            "value": 3
+        },
+        "Lead": {
+            "level": 15,
+            "base_time": 27,
+            "value": 5
+        },
+        "Steel": {
+            "level": 25,
+            "base_time": 31,
+            "value": 7
+        },
+        "Mercury": {
+            "level": 40,
+            "base_time": 36,
+            "value": 9
+        },
+        "Chromite": {
+            "level": 60,
+            "base_time": 40,
+            "value": 11
+        },
+        "Uranium": {
+            "level": 70,
+            "base_time": 44,
+            "value": 13
+        },
+        "Mystical": {
+            "level": 90,
+            "base_time": 55,
+            "value": 17
+        }
+    },
+    "fishes": {
+        "Cod": {
+            "level": 1,
+            "base_time": 7,
+            "value": 2,
+            "bait_cost": 2
+        },
+        "Salmon": {
+            "level": 3,
+            "base_time": 10,
+            "value": 3,
+            "bait_cost": 2
+        },
+        "Tuna": {
+            "level": 5,
+            "base_time": 12,
+            "value": 4,
+            "bait_cost": 2
+        },
+        "Trout": {
+            "level": 8,
+            "base_time": 14,
+            "value": 5,
+            "bait_cost": 4
+        },
+        "Perch": {
+            "level": 11,
+            "base_time": 16,
+            "value": 6,
+            "bait_cost": 4
+        },
+        "Herring": {
+            "level": 15,
+            "base_time": 18,
+            "value": 7,
+            "bait_cost": 7
+        },
+        "Sardines": {
+            "level": 25,
+            "base_time": 21,
+            "value": 8,
+            "bait_cost": 7
+        },
+        "Lobster": {
+            "level": 30,
+            "base_time": 24,
+            "value": 14,
+            "bait_cost": 12
+        },
+        "Crab": {
+            "level": 40,
+            "base_time": 27,
+            "value": 16,
+            "bait_cost": 12
+        },
+        "Turtle": {
+            "level": 50,
+            "base_time": 32,
+            "value": 20,
+            "bait_cost": 16
+        },
+        "Stingray": {
+            "level": 60,
+            "base_time": 40,
+            "value": 27,
+            "bait_cost": 16
+        },
+        "Lantern": {
+            "level": 80,
+            "base_time": 41,
+            "value": 35,
+            "bait_cost": 25
+        },
+        "Great White Shark": {
+            "level": 90,
+            "base_time": 45,
+            "value": 45,
+            "bait_cost": 25
+        }
+    },
+    "smelting_bars": {
+        "Tin": {
+            "level": 1,
+            "base_time": 24,
+            "gold_earned": 5
+        },
+        "Copper": {
+            "level": 5,
+            "base_time": 27,
+            "gold_earned": 6
+        },
+        "Iron": {
+            "level": 10,
+            "base_time": 35,
+            "gold_earned": 8
+        },
+        "Lead": {
+            "level": 15,
+            "base_time": 39,
+            "gold_earned": 9
+        },
+        "Steel": {
+            "level": 25,
+            "base_time": 43,
+            "gold_earned": 15
+        },
+        "Mercury": {
+            "level": 40,
+            "base_time": 48,
+            "gold_earned": 20
+        },
+        "Chromite": {
+            "level": 60,
+            "base_time": 52,
+            "gold_earned": 25
+        },
+        "Uranium": {
+            "level": 70,
+            "base_time": 56,
+            "gold_earned": 35
+        },
+        "Mystical": {
+            "level": 90,
+            "base_time": 67,
+            "gold_earned": 50
+        }
+    },
+    "player_levels": {
+        "Woodcutting": 1,
+        "Mining": 1,
+        "Fishing": 1,
+        "Smelting": 1
+    }
+}
