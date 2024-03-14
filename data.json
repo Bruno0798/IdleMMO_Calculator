@@ -27,22 +27,22 @@
             "value": 5
         },
         "Banyan": {
-            "level": 40,
+            "level": 25,
             "base_time": 31,
             "value": 7
         },
         "Maple": {
-            "level": 60,
+            "level": 40,
             "base_time": 36,
             "value": 9
         },
         "Willow": {
-            "level": 70,
+            "level": 60,
             "base_time": 40,
             "value": 11
         },
         "Mahogany": {
-            "level": 80,
+            "level": 70,
             "base_time": 44,
             "value": 13
         },
