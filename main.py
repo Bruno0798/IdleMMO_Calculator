@@ -86,7 +86,7 @@ def calculate_income(skill, efficiency, level, items):
         income = max((fish["value"] - fish["bait_cost"]) * (3600 / max(1, round((fish["base_time"] * (100 - efficiency)) / 100, 1))) for fish in items.values() if fish["level"] <= level)
         return income
     elif skill == "Smelting":
-        income = max(bar["gold_earned"] * (3600 / max(1, round((bar["base_time"] * (100 - efficiency)) / 100, 1))) - (bar["ore_cost"] + bar["coal_cost"]) for bar in items.values() if bar["level"] <= level)
+        income = max(bar["gold_earned"] * (3600 / max(1, round((bar["base_time"] * (100 - efficiency)) / 100, 1))) for bar in items.values() if bar["level"] <= level)
         return income
     else:
         return 0  # Return 0 if skill is not recognized
@@ -154,6 +154,13 @@ while True:
                 df.columns = ['Level', 'Base Time', 'Value']  # Add 'Level' column here
                 df['Time Efficiency'] = (df['Base Time'] / ((efficiency + 100) / 100)).round(1)
                 df['Potential Income'] = (df['Value'] * (3600 / df['Time Efficiency'])).round(2)
+            elif skill == "Fishing":
+                df = pd.DataFrame.from_dict(fishes, orient='index')
+                df = df[df['level'] <= player_level]  # Filter rows where level is less than or equal to player's level
+                df.index.name = 'Fish'
+                df.columns = ['Level', 'Base Time', 'Value', 'Bait Cost']  # Add 'Level' column here
+                df['Time Efficiency'] = (df['Base Time'] / ((efficiency + 100) / 100)).round(1)
+                df['Potential Income'] = ((df['Value'] - df['Bait Cost']) * (3600 / df['Time Efficiency'])).round(2)
             elif skill == "Smelting":
                 df = pd.DataFrame.from_dict(smelting_bars, orient='index')
                 df = df[df['level'] <= player_level]  # Filter rows where level is less than or equal to player's level

@@ -1,9 +1,9 @@
 {
     "efficiencies": {
-        "Woodcutting": 1,
-        "Mining": 1,
-        "Fishing": 1,
-        "Smelting": 1
+        "Woodcutting": 0,
+        "Mining": 0,
+        "Fishing": 0,
+        "Smelting": 0
     },
     "woodcutting_logs": {
         "Oak": {
@@ -232,9 +232,9 @@
         }
     },
     "player_levels": {
-        "Woodcutting": 1,
-        "Mining": 1,
-        "Fishing": 1,
-        "Smelting": 1
+        "Woodcutting": 100,
+        "Mining": 100,
+        "Fishing": 100,
+        "Smelting": 100
     }
 }
