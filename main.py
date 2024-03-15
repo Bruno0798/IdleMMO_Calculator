@@ -178,6 +178,7 @@ while True:
                     coal_time = round(mining_ores['Coal']['base_time'] / ((efficiencies['Mining'] + 100) / 100), 1)
                     total_time = ore_time + coal_time
                     df['Time Efficiency'] += total_time
+                    df['Potential Income'] = ((df['Gold Earned'] * 3600) / df['Time Efficiency']).round(2)
                 else:
                     print(f"No ore found for {ore_name}")
 
