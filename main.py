@@ -77,16 +77,16 @@ def print_menu():
 
 def calculate_income(skill, efficiency, level, items):
     if skill == "Woodcutting":
-        income = max(log["value"] * (3600 / max(1, round((log["base_time"] * (100 - efficiency)) / 100, 1))) for log in items.values() if log["level"] <= level)
+        income = max(log["value"] * (3600 / max(1, round((log["base_time"] * (100 - efficiency) / 100), 1))) for log in items.values() if log["level"] <= level)
         return income
     elif skill == "Mining":
-        income = max(ore["value"] * (3600 / max(1, round((ore["base_time"] * (100 - efficiency)) / 100, 1))) for ore in items.values() if ore["level"] <= level)
+        income = max(ore["value"] * (3600 / max(1, round((ore["base_time"] * (100 - efficiency) / 100), 1))) for ore in items.values() if ore["level"] <= level)
         return income
     elif skill == "Fishing":
-        income = max((fish["value"] - fish["bait_cost"]) * (3600 / max(1, round((fish["base_time"] * (100 - efficiency)) / 100, 1))) for fish in items.values() if fish["level"] <= level)
+        income = max((fish["value"] - fish["bait_cost"]) * (3600 / max(1, round((fish["base_time"] * (100 - efficiency) / 100), 1))) for fish in items.values() if fish["level"] <= level)
         return income
     elif skill == "Smelting":
-        income = max(bar["gold_earned"] * (3600 / max(1, round((bar["base_time"] * (100 - efficiency)) / 100, 1))) for bar in items.values() if bar["level"] <= level)
+        income = max(bar["gold_earned"] * (3600 / max(1, round((bar["base_time"] * (100 - efficiency) / 100), 1))) for bar in items.values() if bar["level"] <= level)
         return income
     else:
         return 0  # Return 0 if skill is not recognized
